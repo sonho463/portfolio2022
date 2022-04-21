@@ -4,6 +4,7 @@
 @use "./foundation/destyle";
 @use "./foundation/base";
 @use "./foundation/variables";
+@use "./foundation/z-index";
 
 // *--------------*
 // layout
@@ -29,3 +30,4 @@
 // *--------------*
 // utility
 // *--------------*
+@use "./utility/margin";

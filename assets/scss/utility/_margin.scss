@@ -1,0 +1,8 @@
+@use "../foundation/variables" as v;
+
+.mt-content{
+	margin-top: 90px !important;
+	@include v.mq(sm){
+		margin-top: 38px !important;
+	}
+}

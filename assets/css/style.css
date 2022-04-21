@@ -509,6 +509,18 @@ a:hover img {
 }
 
 .l-header {
+  z-index: 200;
+}
+
+.l-cv-button {
+  z-index: 100;
+}
+
+.l-main {
+  z-index: 50;
+}
+
+.l-header {
   position: sticky;
   top: 0;
   padding-top: 20px;
@@ -525,8 +537,12 @@ a:hover img {
 
 .l-cv-button {
   position: fixed;
-  bottom: 3%;
-  right: 3%;
+  bottom: 5%;
+  right: 5%;
+}
+.l-cv-button__link {
+  display: block;
+  width: 150px;
 }
 
 .c-inner {
@@ -536,19 +552,33 @@ a:hover img {
   margin-right: auto;
 }
 
+.c-section {
+  padding-top: 90px;
+}
 .c-section:nth-of-type(odd) {
   background-color: #f0f8ff;
 }
 .c-section__title {
-  font-size: 4rem;
+  font-family: senobi-gothic, sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
   text-align: center;
+  color: rgb(27, 47, 96);
+}
+.c-section__title::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 60px;
+  margin: 36px auto 0;
+  background-color: #b0c4de;
 }
 
 p {
   font-size: 20px;
   color: rgb(27, 47, 96);
 }
-@media screen and (min-width:480px) {
+@media screen and (max-width:480px) {
   p {
     font-size: 12px;
   }
@@ -574,6 +604,76 @@ p {
 
 .p-mv {
   background-color: #f0f8ff;
+  font-family: senobi-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(27, 47, 96);
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.p-mv__heading {
+  position: relative;
+  font-weight: 700;
+}
+.p-mv__heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../images/mv/yellow-circle.png);
+  background-size: cover;
+  width: 210px;
+  height: 210px;
+}
+.p-mv__heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -250%;
+  background-image: url(../images/mv/yellow-circle.png);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+}
+
+.p-mv__sub-heading__text {
+  font-size: 2.4rem;
+}
+.p-mv__heading__text {
+  font-size: 7.2rem;
+}
+.p-mv__face-photo {
+  width: 160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.p-mv__lead__text {
+  font-size: 4rem;
+}
+
+.p-mv__circle-left {
+  position: absolute;
+  width: 210px;
+  top: 5%;
+  left: 10%;
+}
+.p-mv__circle-right {
+  position: absolute;
+  width: 150px;
+  right: 5%;
+  bottom: 5%;
+}
+
+.mt-content {
+  margin-top: 90px !important;
+}
+@media screen and (max-width:480px) {
+  .mt-content {
+    margin-top: 38px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

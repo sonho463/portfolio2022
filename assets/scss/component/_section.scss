@@ -1,20 +1,31 @@
 @use "../foundation/variables" as v;
 
-.c-section{
-	&:nth-of-type(odd){
-		background-color: v.$main-secondary;
-	}
-	&__title{
-		font-size: 4rem;
-		text-align: center;
-	}
+.c-section {
+	padding-top: 90px;
+  &:nth-of-type(odd) {
+    background-color: v.$main-secondary;
+  }
+  &__title {
+    font-family: senobi-gothic, sans-serif;
+		font-weight: 700;
+    font-size: 4.8rem;
+    text-align: center;
+    color: v.$main-primary;
+    &::after {
+      content: "";
+			display: block;
+			height: 10px;
+			width: 60px;
+			margin: 36px auto 0;
+			background-color: v.$shadow-cBlue;
+    }
+  }
 }
 
-p{
-	font-size: 20px;
-	color: v.$main-primary;
-	@include v.mq(sm){
-		font-size: 12px;
-
-	}
+p {
+  font-size: 20px;
+  color: v.$main-primary;
+  @include v.mq(sm) {
+    font-size: 12px;
+  }
 }

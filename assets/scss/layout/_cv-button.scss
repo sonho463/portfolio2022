@@ -2,6 +2,10 @@
 
 .l-cv-button {
   position: fixed;
-  bottom: 3%;
-  right: 3%;
+  bottom: 5%;
+  right: 5%;
+	&__link{
+		display: block;
+		width: 150px;
+	}
 }
