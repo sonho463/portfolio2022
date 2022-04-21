@@ -8,13 +8,13 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<title>そんほんす</title>
 	<script>
-		(function(d) {
+		(function (d) {
 			var config = {
 				kitId: 'epb1ern',
 				scriptTimeout: 3000,
 				async: true
 			},
-			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
 		})(document);
 	</script>
 </head>
@@ -42,7 +42,8 @@
 					<a href="#" class="p-g-nav__link">
 						スキル
 					</a>
-				</li><li class="p-g-nav__item">
+				</li>
+				<li class="p-g-nav__item">
 					<a href="#" class="p-g-nav__link">
 						経歴
 					</a>
@@ -95,26 +96,30 @@
 						アバウト〜私について
 					</h2>
 				</div>
-				<div class="p-about__text mt-content">
-					<p class="p-about__text__block">どうしても、コードを書く仕事をしたくて、
-						２０２０年３月から本気出して勉強をはじめました。
-					</p>
-					<p class="p-about__text__block">先輩フリーランスや
-						所属コミュニティから案件をいただいて、
-						２件（２０２２年３月現在）
-						納品できたところです。
-					</p>
-					<p class="p-about__text__block">
-						コーディングを中心に
-						さらに技術を磨いていきたいと考えています。
-					</p>
-				</div>
-				<div class="p-about__date-block">
-					<p class="p-about__date">○月○日</p>
-					<p class="p-about__charge">日直</p>
-					<p class="p-about__name">そんほんす</p>
-				</div>
-			</div>
+				<section class="p-about__bg">
+					<div class="p-about__text__block">
+						<div class="p-about__text">
+							どうしても、コードを書く仕事をしたくて、<br class="active-pc">
+							２０２０年３月から本気出して勉強をはじめました。<br class="active-pc">
+						</div>
+						<div class="p-about__text">
+							先輩フリーランスや<br class="active-pc">
+							所属コミュニティから案件をいただいて、<br class="active-pc">
+							２件（２０２２年３月現在）<br class="active-pc">
+							納品できたところです。<br class="active-pc">
+
+						</div>
+						<div class="p-about__text">
+							コーディングを中心に<br class="active-pc">
+							さらに技術を磨いていきたいと考えています。
+						</div>
+					</div>
+					<div class="p-about__date-unit">
+						<p class="p-about__date">○月○日</p>
+						<p class="p-about__charge">日直</p>
+						<p class="p-about__name">そんほんす</p>
+					</div>
+				</section>
 		</section>
 		<section class="p-works c-section">
 			<div class="c-inner">
@@ -124,7 +129,7 @@
 					</h2>
 				</div>
 
-				<ul class="p-works__card-list mt-content">
+				<ul class="p-works__card-list">
 					<li class="p-works__card">
 						<div class="p-works__card__inner">
 							<div class="p-works__drop">
@@ -183,7 +188,7 @@
 						スキル
 					</h2>
 				</div>
-				<ul class="p-skills__article-list mt-content">
+				<ul class="p-skills__article-list">
 					<li class="p-skills__article__item">
 						<figure class="p-skills__article__icon"></figure>
 						<div class="p-skills__article__text-block">

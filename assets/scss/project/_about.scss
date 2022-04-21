@@ -1,0 +1,46 @@
+@use "../foundation/variables" as v;
+
+.p-about__bg{
+	background-image: url(../images/about/bg.jpg);
+	background-size: cover;
+}
+
+.p-about{
+	position: relative;
+	z-index: 0;
+	&__text__block{
+		color: v.$color-white;
+		font-size: 3.2rem;
+		font-weight: bold;
+		line-height: 2;
+		font-family: "ヒラギノ明朝 ProN";
+		text-align: center;
+		padding: 90px 10%;
+	}
+	&__text + .p-about__text {
+		margin-top: 3.2rem;
+	}
+	&__date-unit{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		right: 8%;
+		bottom: 8%;
+		color: v.$color-white;
+	}
+	&__date,
+	&__name{
+		writing-mode: vertical-rl;
+	}
+	&__date{
+		font-size: 5.8rem;
+		font-weight: bold;
+	}
+	&__charge{
+		font-size: 3.2rem;
+	}
+	&__name{
+		font-size:4.0rem;
+	}
+}
