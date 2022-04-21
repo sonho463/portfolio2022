@@ -1,0 +1,13 @@
+@use "../foundation/variables" as v;
+
+.p-g-nav{
+	background-color: v.$main-secondary;
+	&__inner{
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

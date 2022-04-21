@@ -6,18 +6,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/css/style.css">
-	<title>BEM-FLOCSS PROJECT</title>
+	<title>そんほんす</title>
 </head>
 
 <body>
 	<header class="l-header">
-		<nav class="p-gNav">
-			<ul class="p-gNav__inner">
-				<li class="p-gNav__item"></li>
-				<li class="p-gNav__item"></li>
-				<li class="p-gNav__item"></li>
-				<li class="p-gNav__item"></li>
-				<li class="p-gNav__item"></li>
+		<nav class="p-g-nav">
+			<ul class="p-g-nav__inner">
+				<li class="p-g-nav__item">アバウト</li>
+				<li class="p-g-nav__item">実績</li>
+				<li class="p-g-nav__item">
+					<img src="./assets/images/ico_webson.png" alt="">
+				</li>
+				<li class="p-g-nav__item">スキル</li>
+				<li class="p-g-nav__item">経歴</li>
 			</ul>
 		</nav>
 		<div class="p-hamburger-btn">
@@ -26,11 +28,356 @@
 			<span class="p-hamburger-btn__line"></span>
 		</div>
 	</header>
+	<nav class="l-cv-button">
+		<a href="#">
+			<img src="./assets/images/cv-button.png" alt="お問い合わせ">
+		</a>
+	</nav>
 
-	<div class="l-main"></div>
+	<div class="l-main">
+		<section class="p-mv">
+			<div class="c-inner">
+				<p class="p-mv__circle-left"></p>
+				<div class="p-mv__sub-heading">
+					<p class="p-mv__sub-heading__text">大阪府八尾市</p>
+					<p class="p-mv__sub-heading__text">ウェブ制作・ウェブ開発 フリーランス</p>
+				</div>
+				<div class="p-mv__heading">
+					<h1 class="p-mv__sub__heading__text">そんほんす（孫弘樹）</h1>
+				</div>
+				<div class="p-mv__lead">
+					<p class="p-mv__lead__text"></p>
+				</div>
+				<p class="p-mv__circle-right"></p>
+				<figure class="p-mv__face-photo">
+					<img src="./assets/images/face.png" alt="" class="p-mv__face-photo__image">
+				</figure>
+			</div>
+		</section>
+
+		<section class="p-about c-section">
+			<!--ここに黒板背景 -->
+			<div class="c-inner">
+				<div class="c-section__title">
+					<!-- beforeで円のあしらい afterでアンダーライン　h2?-->
+					<h2 class="c-section__title__text">
+						アバウト〜私について
+					</h2>
+				</div>
+				<div class="p-about__text">
+					<p class="p-about__text__block">どうしても、コードを書く仕事をしたくて、
+						２０２０年３月から本気出して勉強をはじめました。
+					</p>
+					<p class="p-about__text__block">先輩フリーランスや
+						所属コミュニティから案件をいただいて、
+						２件（２０２２年３月現在）
+						納品できたところです。
+					</p>
+					<p class="p-about__text__block">
+						コーディングを中心に
+						さらに技術を磨いていきたいと考えています。
+					</p>
+				</div>
+				<div class="p-about__date-block">
+					<p class="p-about__date">○月○日</p>
+					<p class="p-about__charge">日直</p>
+					<p class="p-about__name">そんほんす</p>
+				</div>
+			</div>
+		</section>
+		<section class="p-works c-section">
+			<div class="c-inner">
+				<div class="c-section__title">
+					<h2 class="c-section__title__text">
+						制作実績・これまでの活動
+					</h2>
+				</div>
+
+				<ul class="p-works__card-list">
+					<li class="p-works__card">
+						<div class="p-works__card__inner">
+							<div class="p-works__drop">
+								<h3 class="p-works__title">ウェブ制作</h3>
+							</div>
+							<p class="p-works__text">
+								WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+							</p>
+						</div>
+						<a href="#" class="p-works__nav-to-detail">
+							<p href="#" class="p-works__nav-to-detail__inner">
+								詳しく見る
+								<!--after でやじるし-->
+							</p>
+						</a>
+					</li>
+					<li class="p-works__card">
+						<div class="p-works__card__inner">
+							<div class="p-works__drop">
+								<h3 class="p-works__title">ウェブ開発</h3>
+							</div>
+							<p class="p-works__text">
+								WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+							</p>
+						</div>
+						<a href="#" class="p-works__nav-to-detail">
+							<p href="#" class="p-works__nav-to-detail__inner">
+								詳しく見る
+								<!--after でやじるし-->
+							</p>
+						</a>
+					</li>
+					<li class="p-works__card">
+						<div class="p-works__card__inner">
+							<div class="p-works__drop">
+								<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+							</div>
+							<p class="p-works__text">
+								WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+							</p>
+						</div>
+						<a href="#" class="p-works__nav-to-detail">
+							<p href="#" class="p-works__nav-to-detail__inner">
+								詳しく見る
+								<!--after でやじるし-->
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="p-skills c-section">
+			<div class="c-inner">
+				<div class="c-section__title">
+					<h2 class="c-section__title__text">
+						スキル
+					</h2>
+				</div>
+				<ul class="p-skills__article-list">
+					<li class="p-skills__article__item">
+						<figure class="p-skills__article__icon"></figure>
+						<div class="p-skills__article__text-block">
+							<h3 class="p-skills__article__title">HTML/CSS/JavaScript</h3>
+							<p class="p-skills__article__text">
+								ウェブ周りの基本、HTML、CSS、JavaScriptは常にアップデートしてまいります。セマンティックなHTML、SEOを意識した構造、BEM,FLOCSS,PRECSSなどのCSS設計思想、JavaScript、JQueryも対応できます。
+							</p>
+						</div>
+					</li>
+					<li class="p-skills__article__item">
+						<figure class="p-skills__article__icon"></figure>
+						<div class="p-skills__article__text-block">
+							<h3 class="p-skills__article__title">Wordpress</h3>
+							<p class="p-skills__article__text">
+								WordPress既存テーマでのサイト構築。静的サイトのWordPress化も可能です。PHPのロジックを使ってできるだけ効率的にコードを書きます。</p>
+						</div>
+					</li>
+					<li class="p-skills__article__item">
+						<figure class="p-skills__article__icon"></figure>
+						<div class="p-skills__article__text-block">
+							<h3 class="p-skills__article__title">タスクランナー Node.js</h3>
+							<p class="p-skills__article__text">タスクランナーにnode
+								Scriptを使っています。scssのコンパイル、prefixの付与など。静的サイトのコーディングをできるだけ効率化します。</p>
+						</div>
+					</li>
+					<li class="p-skills__article__item">
+						<figure class="p-skills__article__icon"></figure>
+						<div class="p-skills__article__text-block">
+							<h3 class="p-skills__article__title">Gatsby.js</h3>
+							<p class="p-skills__article__text">静的サイトジェネレータGatsbyのテーマを使って、サイトを構築できます。また、ブログのHTML，CSSデータをGtasbyで構築しました。
+							</p>
+						</div>
+					</li>
+					<li class="p-skills__article__item">
+						<figure class="p-skills__article__icon"></figure>
+						<div class="p-skills__article__text-block">
+							<h3 class="p-skills__article__title">AdobeXD</h3>
+							<p class="p-skills__article__text">デザインは主にAdobeXDを使用しています。コンポーネント、レイヤーを意識して、見やすく、コーディングもしやすいデザインを作成します。
+							</p>
+						</div>
+					</li>
+					<li class="p-skills__article__item">
+						<figure class="p-skills__article__icon"></figure>
+						<div class="p-skills__article__text-block">
+							<h3 class="p-skills__article__title">ホワイトボード・ミーティング®</h3>
+							<p class="p-skills__article__text">ホワイトボードミーティング®というファシリテーションスキルの認定講師資格を持っています。ヒヤリングや会議の運営で力を発揮します。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="p-price c-section">
+			<div class="c-inner">
+				<div class="c-section__title">
+					<h2 class="c-section__title__text">
+						料金
+					</h2>
+				</div>
+				<section class="c-lead">
+					<p class="c-lead__text">
+						以下はめやすです。詳しくはお問い合わせ下さい。
+						ページごとのデザイン、コーディングなど個別の料金についてはこちら。
+					</p>
+				</section>
+
+				<section class="p-price__grid-table">
+
+					<div class="p-price__heading">
+						<h3 class="p-price__heading__text">ご相談・お見積り</h3>
+					</div>
+					<div class="p-price_desc">
+						<p class="p-price__desc__text">
+							ホームページを作りたい！なにか役に立つのではないか？そう思ったときには、お気軽にご相談下さい。サーバー契約、保守運用などについても、丁寧にご説明いたします。
+						</p>
+					</div>
+					<div class="p-price__price">
+						<p class="p-price__price_text">
+							無料
+						</p>
+					</div>
+					<div class="p-price__heading">
+						<h3 class="p-price__heading__text">ベーシック</h3>
+					</div>
+					<div class="p-price_desc">
+						<p class="p-price__desc__text">
+							オリジナルデザイン
+							全4ページ構成　TOP　＋　問い合わせ　＋　2ページ
+							基本的な構成でまずはホームページを持ちたいという方におすすめです。
+						</p>
+					</div>
+					<div class="p-price__price">
+						<p class="p-price__price_text">
+							350000円〜
+						</p>
+					</div>
+					<div class="p-price__heading">
+						<h3 class="p-price__heading__text">スタンダード</h3>
+					</div>
+					<div class="p-price_desc">
+						<p class="p-price__desc__text">
+							オリジナルデザイン
+全5ページ構成　TOP　＋　問い合わせ　＋　3ページ　＋　CMS
+基本的な構成に加え、お知らせ、ブログなどをお客様で更新していただけるシステムWordPressを導入します。
+						</p>
+					</div>
+					<div class="p-price__price">
+						<p class="p-price__price_text">
+							460000円〜
+						</p>
+					</div>
+					<div class="p-price__heading">
+						<h3 class="p-price__heading__text">プレミアム</h3>
+					</div>
+					<div class="p-price_desc">
+						<p class="p-price__desc__text">
+							オリジナルデザイン
+全10ページ　TOP　＋　問い合わせ　＋　8ページ　＋　CMS
+基本的な構成に加え、お知らせ、ブログなど更新できるページ、さらに、御社の強みを分析し、打ち出すページを加えることで、ページをユーザーに届きやすくできます。
+						</p>
+					</div>
+					<div class="p-price__price">
+						<p class="p-price__price_text">
+							600000円〜
+						</p>
+					</div>
+					<div class="p-price__heading">
+						<h3 class="p-price__heading__text">個別料金</h3>
+					</div>
+					<div class="p-price_desc">
+						<p class="p-price__desc__text">
+							デザイン　トップページ　1ページ
+						</p>
+					</div>
+					<div class="p-price__price">
+						<p class="p-price__price_text">
+							25000円
+						</p>
+					</div>
+
+				</section>
+				<p class="p-price__notice">
+					※様々なご希望をお聞かせ頂いた上で、お見積りをいたします。まずは、お気軽にお問い合わせ下さい。
+				</p>
+		</section>
+		<section class="p-carrer c-section">
+			<div class="c-inner">
+				<div class="c-section__title">
+					<h2 class="c-section__title__text">
+						経歴
+					</h2>
+				</div>
+				<section class="c-lead">
+					<p class="c-lead__text">
+						私のこれまでの経歴です。
+						仕事のこととPCに関わることを中心に記載しています。
+					</p>
+				</section>
+				<section class="p-carrer__grid-table">
+					<div class="p-carrer__date">
+						<p class="p-carrer__date__text">
+							1972年7月18日
+						</p>
+					</div>
+					<div class="p-carrer__desc">
+						<p class="p-carrer__desc__text">
+							兵庫県川西市で生まれる。
+							まるまると太っていましたが、一度鼻血が止まらず、そこから、とても華奢な子どもになる。
+						</p>
+					</div>
+					<div class="p-carrer__date">
+						<p class="p-carrer__date__text">
+							1972年7月18日
+						</p>
+					</div>
+					<div class="p-carrer__desc">
+						<p class="p-carrer__desc__text">
+							兵庫県川西市で生まれる。
+							まるまると太っていましたが、一度鼻血が止まらず、そこから、とても華奢な子どもになる。
+						</p>
+					</div>
+					<div class="p-carrer__date">
+						<p class="p-carrer__date__text">
+							1972年7月18日
+						</p>
+					</div>
+					<div class="p-carrer__desc">
+						<p class="p-carrer__desc__text">
+							兵庫県川西市で生まれる。
+							まるまると太っていましたが、一度鼻血が止まらず、そこから、とても華奢な子どもになる。
+						</p>
+					</div>
 
 
-	<footer class="l-footer"></footer>
+				</section>
+
+		</section>
+	</div>
+
+
+	<footer class="l-footer">
+		<figure class="p-footer__logo">
+			<img src="./assets/images/footer-logo.png" alt="">
+		</figure>
+		<a href="" class="p-footer__cv">
+			<img src="./assets/images/footer-cv.png" alt="">
+		</a>
+		<nav class="p-footer__nav">
+			<ul class="p-footer__menu">
+				<li class="p-footer__menu__item">
+					アバウト
+				</li>
+				<li class="p-footer__menu__item">
+					スキル
+				</li>
+				<li class="p-footer__menu__item">
+					実績
+				</li>
+				<li class="p-footer__menu__item">
+					経歴
+				</li>
+
+			</ul>
+		</nav>
+		<p class="l-footer__copyright">&copy2021 WEBSON そんほんす</p>
+	</footer>
 </body>
 
 </html>

@@ -1,0 +1,20 @@
+@use "../foundation/variables" as v;
+
+.c-section{
+	&:nth-of-type(odd){
+		background-color: v.$main-secondary;
+	}
+	&__title{
+		font-size: 4rem;
+		text-align: center;
+	}
+}
+
+p{
+	font-size: 20px;
+	color: v.$main-primary;
+	@include v.mq(sm){
+		font-size: 12px;
+
+	}
+}
