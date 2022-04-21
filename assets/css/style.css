@@ -490,7 +490,7 @@ object {
 }
 
 a {
-  color: #0066c0;
+  color: #333;
   text-decoration: underline;
   transition: 0.3s;
 }
@@ -511,6 +511,9 @@ a:hover img {
 .l-header {
   position: sticky;
   top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f0f8ff;
 }
 
 .l-footer {
@@ -555,12 +558,18 @@ p {
   background-color: #f0f8ff;
 }
 .p-g-nav__inner {
-  width: 60%;
+  width: 56%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.p-g-nav__item {
+  font-size: 2.4rem;
+}
+.p-g-nav__item--icon {
+  width: 100px;
 }
 
 .p-mv {

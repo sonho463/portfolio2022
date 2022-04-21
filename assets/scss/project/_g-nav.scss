@@ -3,11 +3,17 @@
 .p-g-nav{
 	background-color: v.$main-secondary;
 	&__inner{
-		width: 60%;
+		width: 56%;
 		margin-right: auto;
 		margin-left: auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	&__item{
+		font-size: 2.4rem;
+	}
+	&__item--icon{
+		width: 100px;
 	}
 }

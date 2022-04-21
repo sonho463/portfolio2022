@@ -1,3 +1,4 @@
+@use "./variables" as v;
 
 *,
 *:before,
@@ -32,7 +33,7 @@ object {
 }
 
 a {
-	color: #0066c0;
+	color: v.$color-black;
 	text-decoration: underline;
 	transition: 0.3s;
 	&:hover {
@@ -49,4 +50,3 @@ a:hover img {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
-
