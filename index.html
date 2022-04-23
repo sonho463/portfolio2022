@@ -113,11 +113,14 @@
 							コーディングを中心に<br class="active-pc">
 							さらに技術を磨いていきたいと考えています。
 						</div>
-					</div>
-					<div class="p-about__date-unit">
-						<p class="p-about__date">○月○日</p>
-						<p class="p-about__charge">日直</p>
-						<p class="p-about__name">そんほんす</p>
+						<div class="p-about__date-unit">
+							<p class="p-about__date">
+								<span id="js_month" class="p-about__month">○</span>月
+								<span id="js_day" class="p-about__day">○</span>日
+							</p>
+							<p class="p-about__charge">日直</p>
+							<p class="p-about__name">そんほんす</p>
+						</div>
 					</div>
 				</section>
 		</section>
@@ -131,51 +134,48 @@
 
 				<ul class="p-works__card-list">
 					<li class="p-works__card">
-						<div class="p-works__card__inner">
+						<a href="#" class="p-works__card__inner">
 							<div class="p-works__drop">
-								<h3 class="p-works__title">ウェブ制作</h3>
+								<div class="p-works__drop__inner">
+									<h3 class="p-works__title">ウェブ制作</h3>
+								</div>
 							</div>
 							<p class="p-works__text">
 								WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
 							</p>
-						</div>
+						</a>
 						<a href="#" class="p-works__nav-to-detail">
-							<p href="#" class="p-works__nav-to-detail__inner">
-								詳しく見る
-								<!--after でやじるし-->
-							</p>
+							<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
 						</a>
 					</li>
 					<li class="p-works__card">
-						<div class="p-works__card__inner">
+						<a href="#" class="p-works__card__inner">
 							<div class="p-works__drop">
-								<h3 class="p-works__title">ウェブ開発</h3>
+								<div class="p-works__drop__inner">
+									<h3 class="p-works__title">ウェブ開発</h3>
+								</div>
 							</div>
 							<p class="p-works__text">
 								WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
 							</p>
-						</div>
+						</a>
 						<a href="#" class="p-works__nav-to-detail">
-							<p href="#" class="p-works__nav-to-detail__inner">
-								詳しく見る
-								<!--after でやじるし-->
-							</p>
+							<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
 						</a>
 					</li>
 					<li class="p-works__card">
-						<div class="p-works__card__inner">
+						<a href="#" class="p-works__card__inner">
 							<div class="p-works__drop">
-								<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+								<div class="p-works__drop__inner">
+									<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+								</div>
 							</div>
 							<p class="p-works__text">
-								WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+								LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
 							</p>
-						</div>
+						</a>
 						<a href="#" class="p-works__nav-to-detail">
-							<p href="#" class="p-works__nav-to-detail__inner">
-								詳しく見る
-								<!--after でやじるし-->
-							</p>
+							<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
 						</a>
 					</li>
 				</ul>
@@ -414,6 +414,8 @@
 		</nav>
 		<p class="l-footer__copyright">&copy2021 WEBSON そんほんす</p>
 	</footer>
+
+	<script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

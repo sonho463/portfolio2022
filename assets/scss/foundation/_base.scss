@@ -14,13 +14,13 @@ html {
 }
 
 body {
-	color: #333333;
+	color: v.$main-primary;
 	font-size: 1.6rem;
-	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-		"Hiragino Sans", Meiryo, sans-serif;
+	font-family: "Helvetica Neue", Arial, "Hiragino Mincho ProN", Meiryo, sans-serif;
 	min-width: 350px;
 	width: 100%;
 	overflow-x: hidden;
+	text-align: justify;
 }
 
 img,

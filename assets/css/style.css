@@ -473,12 +473,13 @@ html {
 }
 
 body {
-  color: #333333;
+  color: rgb(27, 47, 96);
   font-size: 1.6rem;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Mincho ProN", Meiryo, sans-serif;
   min-width: 350px;
   width: 100%;
   overflow-x: hidden;
+  text-align: justify;
 }
 
 img,
@@ -689,6 +690,7 @@ a:hover img {
 .p-about__bg {
   background-image: url(../images/about/bg.jpg);
   background-size: cover;
+  position: relative;
 }
 
 .p-about {
@@ -699,7 +701,7 @@ a:hover img {
   color: #fff;
   font-size: 3.2rem;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.6;
   font-family: "ヒラギノ明朝 ProN";
   text-align: center;
   padding: 90px 10%;
@@ -712,22 +714,85 @@ a:hover img {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  right: 8%;
-  bottom: 8%;
+  right: 2%;
+  top: 25%;
   color: #fff;
 }
 .p-about__date, .p-about__name {
   writing-mode: vertical-rl;
 }
 .p-about__date {
-  font-size: 5.8rem;
+  font-size: 4.8rem;
   font-weight: bold;
 }
+.p-about__month, .p-about__day {
+  display: inline-block;
+  transform: rotate(-90deg);
+  margin-bottom: 5px;
+}
 .p-about__charge {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 .p-about__name {
-  font-size: 4rem;
+  font-size: 3.2rem;
+}
+
+.p-works__card-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.p-works__card {
+  width: 30%;
+  padding: 32px 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px #707070;
+  background-color: #fff;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15), 6px 6px 6px 0px rgba(0, 0, 0, 0.15) inset;
+  transition: background-color 1s;
+}
+.p-works__card:hover {
+  background-color: #f0f8ff;
+  transition: background-color 0.5s;
+}
+.p-works__card__inner {
+  text-decoration: none;
+}
+
+.p-works__drop {
+  height: auto;
+  background-color: #f0f8ff;
+  border: solid 1px #707070;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.p-works__drop__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+}
+.p-works__title {
+  font-family: senobi-gothic, sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.p-works__text {
+  margin-top: 40px;
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+}
+
+.p-works__nav-to-detail {
+  display: inline-block;
+  width: 26%;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
