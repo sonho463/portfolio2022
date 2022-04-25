@@ -850,3 +850,51 @@ a:hover img {
   bottom: 0;
   right: 0;
 }
+
+.p-skills__article__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  padding: 50px 5%;
+}
+.p-skills__article__item:nth-of-type(odd) {
+  background-color: #f0f8ff;
+}
+.p-skills__article__icon {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  height: 150px;
+  width: auto;
+}
+.p-skills__article__icon__image {
+  height: 100%;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-skills__article__text-block {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  margin-left: 30px;
+}
+.p-skills__article__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.p-skills__article__text {
+  margin-top: 20px;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
