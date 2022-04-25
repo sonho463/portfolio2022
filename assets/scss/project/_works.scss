@@ -10,9 +10,6 @@
 	&__card {
 		width: 30%;
 		padding: 32px 3%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
 		border: solid 1px v.$color-border-gray;
 		background-color: #fff;
 		box-shadow:
@@ -25,7 +22,12 @@
 		}
 	}
 	&__card__inner{
+		position: relative;
 		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 100%;
 	}
 }
 
@@ -58,6 +60,7 @@
 		margin-top: 40px;
 		font-size: 2.4rem;
 		letter-spacing: .05em;
+		padding-bottom: 80px;
 	}
 }
 
@@ -67,5 +70,8 @@
 .p-works__nav-to-detail{
 	display: inline-block;
 	width: 26%;
-	align-self: flex-end;
+	// align-self: flex-end;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
