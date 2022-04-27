@@ -1,41 +1,51 @@
 @use "../foundation/variables" as v;
 
 .c-section {
-	padding-top: 90px;
+  padding-top: 90px;
   &:nth-of-type(odd) {
     background-color: v.$main-secondary;
   }
   &__title {
-		position: relative;
+    position: relative;
     font-family: senobi-gothic, sans-serif;
-		font-weight: 700;
+    font-weight: 700;
     font-size: 4.8rem;
     text-align: center;
     color: v.$main-primary;
-		width: fit-content;
-		margin-right: auto;
-		margin-left: auto;
-		margin-bottom: 100px;
-		@include v.mq(sm){
-			margin-bottom: 38px;
-		}
-		&::before{
-			content: '';
-			display: block;
-			position: absolute;
-			background-image: url(../images/mv/yellow-circle.png);
-			background-size: cover;
-			width: 60px;
-			height: 60px;
-			transform:translate( -35%, -35%)
-		}
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    @include v.mq(sm) {
+      margin-bottom: 38px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url(../images/mv/yellow-circle.png);
+      background-size: cover;
+      width: 60px;
+      height: 60px;
+      transform: translate(-35%, -35%);
+    }
     &::after {
       content: "";
-			display: block;
-			height: 10px;
-			width: 60px;
-			margin: 36px auto 0;
-			background-color: v.$shadow-cBlue;
+      display: block;
+      height: 10px;
+      width: 60px;
+      margin: 36px auto 0;
+      background-color: v.$shadow-cBlue;
     }
+  }
+  &__lead {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+		text-align: center;
+		margin-bottom: 100px;
+		&__text{
+			font-size: 2.4rem;
+		}
   }
 }
