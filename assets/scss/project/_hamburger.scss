@@ -13,8 +13,24 @@
 		width: 30px;
 		height: 3px;
 		background-color: v.$main-primary;
+		transition: all .7s;
+
 		+ span{
 			margin-top: 8px;
+		}
+	}
+}
+
+.p-hamburger-btn.open{
+	.p-hamburger-btn__line{
+		&:first-of-type{
+			transform: translateY(11px) rotate(45deg);
+		}
+		&:nth-of-type(2){
+			opacity: 0;
+		}
+		&:last-of-type{
+			transform: translateY(-11px) rotate(-225deg);
 		}
 	}
 }

@@ -31,7 +31,7 @@ $(window).scroll(function () {
 const ham = $('.js-hamburger-btn');
 const nav = $('.js-g-nav');
 ham.on('click', function () { //ハンバーガーメニューをクリックしたら
-  // ham.toggleClass('is-active'); // ハンバーガーメニューにactiveクラスを付け外し
+  ham.toggleClass('open'); // ハンバーガーメニューにactiveクラスを付け外し
   nav.toggleClass('is-active'); // ナビゲーションメニューにactiveクラスを付け外し
 
 });
