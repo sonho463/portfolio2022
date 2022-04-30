@@ -21,15 +21,15 @@
 
 <body>
 	<header class="l-header">
-		<nav class="p-g-nav">
+		<nav class="p-g-nav js-g-nav">
 			<ul class="p-g-nav__inner">
 				<li class="p-g-nav__item">
-					<a href="#" class="p-g-nav__link">
+					<a href="#about" class="p-g-nav__link">
 						アバウト
 					</a>
 				</li>
 				<li class="p-g-nav__item">
-					<a href="#" class="p-g-nav__link">
+					<a href="#works" class="p-g-nav__link">
 						実績
 					</a>
 				</li>
@@ -39,24 +39,24 @@
 					</a>
 				</li>
 				<li class="p-g-nav__item">
-					<a href="#" class="p-g-nav__link">
+					<a href="#skills" class="p-g-nav__link">
 						スキル
 					</a>
 				</li>
 				<li class="p-g-nav__item">
-					<a href="#" class="p-g-nav__link">
+					<a href="#career" class="p-g-nav__link">
 						経歴
 					</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="p-hamburger-btn">
+		<div class="p-hamburger-btn js-hamburger-btn">
 			<span class="p-hamburger-btn__line"></span>
 			<span class="p-hamburger-btn__line"></span>
 			<span class="p-hamburger-btn__line"></span>
 		</div>
 	</header>
-	<nav class="l-cv-button">
+	<nav class="l-cv-button js-cv-button">
 		<a href="#" class="l-cv-button__link">
 			<img class="l-cv-button__image" src="./assets/images/mv/cv-button.png" alt="お問い合わせ">
 		</a>
@@ -73,7 +73,18 @@
 					<p class="p-mv__sub-heading__text">ウェブ制作・ウェブ開発 フリーランス</p>
 				</div>
 				<div class="p-mv__heading">
-					<h1 class="p-mv__heading__text">WEBSON・そんほんす（孫弘樹）</h1>
+					<h1 class="p-mv__heading__text">
+						<span class="inline-block">
+							WEBSON
+						</span>
+						<span class="inline-block active-pc">・</span>
+						<span class="inline-block">
+							そんほんす
+						</span>
+						<span class="inline-block">
+							（孫弘樹）
+						</span>
+					</h1>
 				</div>
 				<!-- <p class="p-mv__circle-right">
 					<img src="./assets/images/mv/yellow-circle.png" alt="">
@@ -87,7 +98,7 @@
 			</div>
 		</section>
 
-		<section class="p-about c-section">
+		<section id="about" class="p-about c-section">
 			<!--ここに黒板背景 -->
 			<div class="c-inner">
 				<div class="c-section__title">
@@ -124,7 +135,7 @@
 					</div>
 				</section>
 		</section>
-		<section class="p-works c-section">
+		<section id="works" class="p-works c-section">
 			<div class="c-inner">
 				<div class="c-section__title">
 					<h2 class="c-section__title__text">
@@ -181,7 +192,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="p-skills c-section">
+		<section id="skills" class="p-skills c-section">
 			<div class="c-inner">
 				<div class="c-section__title">
 					<h2 class="c-section__title__text">
@@ -377,7 +388,7 @@
 					</p>
 				</section>
 		</section>
-		<section class="p-career c-section">
+		<section id="career" class="p-career c-section">
 			<div class="c-inner">
 				<div class="c-section__title">
 					<h2 class="c-section__title__text">
@@ -448,7 +459,39 @@
 							このときに、ホワイトボード・ミーティング®の認定講師資格や衛生推進員資格を取得。
 						</p>
 					</div>
+					<div class="p-career__date">
+						<p class="p-career__date__text">
+							2016年〜2020年 </p>
+					</div>
+					<div class="p-career__desc">
+						<p class="p-career__desc__text">
+							教育現場に復帰。日本語指導担当になる。組合の書記長はそのまま継続。
+							コロナ禍の学校において、チャットツールを導入。名簿管理やテストの集計において、VBAを調べつつ活用。テスト集計の工数を大幅に減らし感謝される。生活指導担当も経験。
+							この頃に、プログラミング学習にとりくみはじめるも、一旦挫折。
+						</p>
+					</div>
+					<div class="p-career__date">
+						<p class="p-career__date__text">
+							2019年〜 </p>
+					</div>
+					<div class="p-career__desc">
+						<p class="p-career__desc__text">
+							コロナ禍の中、プログラミング学習再開。Progateウェブ開発パス（Rails）を完走。Railsチュートリアル完走。Isaraの模写中にOver40WebClubに加入。学習が加速。
+							勉強会ドリブン勉強法を実践、connpassで4回の学習会の講師。
+						</p>
+					</div>
+					<div class="p-career__date">
+						<p class="p-career__date__text">
+							2021年〜 </p>
+					</div>
+					<div class="p-career__desc">
+						<p class="p-career__desc__text">
+							転勤して、新しい学校で日本語指導。
+							Over40WebClubの先輩フリーランスからコーディング〜WordPress化案件をいただいて、納品。エクプラというコミュニティでウェブ制作会社のLPコーディング案件をいただいて納品。
+							現在は、自分が所属する団体のHP構築、SNS運用中。
 
+						</p>
+					</div>
 
 				</section>
 
@@ -456,32 +499,43 @@
 	</div>
 
 
-	<footer class="l-footer">
-		<figure class="p-footer__logo">
+	<footer class="l-footer js-footer">
+		<figure class="l-footer__logo">
 			<img src="./assets/images/footer/footer-logo.png" alt="">
 		</figure>
-		<a href="" class="p-footer__cv">
+		<a href="" class="l-footer__cv">
 			<img src="./assets/images/footer/footer-cv.png" alt="">
 		</a>
-		<nav class="p-footer__nav">
-			<ul class="p-footer__menu">
-				<li class="p-footer__menu__item">
-					アバウト
+		<nav class="l-footer__nav">
+			<ul class="l-footer__menu">
+				<li class="l-footer__menu__item">
+					<a href="#about">
+						アバウト
+					</a>
 				</li>
-				<li class="p-footer__menu__item">
-					スキル
+				<li class="l-footer__menu__item">
+					<a href="#works">
+						実績
+					</a>
 				</li>
-				<li class="p-footer__menu__item">
-					実績
+				<li class="l-footer__menu__item">
+					<a href="#skills">
+						スキル
+					</a>
 				</li>
-				<li class="p-footer__menu__item">
-					経歴
+				<li class="l-footer__menu__item">
+					<a href="#career">
+						経歴
+					</a>
 				</li>
 
 			</ul>
 		</nav>
 		<p class="l-footer__copyright">&copy2021 WEBSON そんほんす</p>
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script src="./assets/scripts/main.js"></script>
 </body>

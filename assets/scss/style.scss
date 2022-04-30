@@ -20,7 +20,6 @@
 @use "./component/section";
 
 // *--------------*
-// project
 // *--------------*
 @use "./project/g-nav";
 @use "./project/mv";
@@ -29,9 +28,10 @@
 @use "./project/skills";
 @use "./project/price";
 @use "./project/carrer";
-
+@use "./project/hamburger";
 
 // *--------------*
 // utility
 // *--------------*
 @use "./utility/margin";
+@use "./utility/display"

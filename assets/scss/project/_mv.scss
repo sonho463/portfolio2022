@@ -10,6 +10,9 @@
   padding-top: 70px;
   padding-bottom: 70px;
   position: relative;
+	@include v.mq(sm){
+		padding-bottom: 0;
+	}
 }
 
 .p-mv {
@@ -17,12 +20,11 @@
     position: relative;
     font-weight: 700;
     &__text {
-      position: relative;
-      z-index: 10;
+			position: relative;
     }
   }
   &__heading::before {
-    content: "";
+		content: "";
     display: block;
     position: absolute;
 		transform:translate(-30%, -70%);
@@ -30,35 +32,49 @@
     background-size: cover;
     width: 210px;
     height: 210px;
-    z-index: 5;
   }
   &__heading::after {
-    content: "";
+		content: "";
     display: block;
     position: absolute;
     right: 0;
-    bottom: -300%;
+    bottom: -80%;
     background-image: url(../images/mv/yellow-circle.png);
     background-size: cover;
     width: 130px;
     height: 130px;
+		@include v.mq(sm){
+			bottom: -10%;
+		}
   }
 }
 
 .p-mv {
-  &__sub-heading__text {
-    font-size: 2.4rem;
+	&__sub-heading{
+		position: relative;
+	}
+	&__sub-heading__text {
+		font-size: 2.4rem;
+		@include v.mq(sm){
+			font-size: 1.8rem;
+		}
   }
   &__heading__text {
-    font-size: 7.2rem;
+		font-size: 7.2rem;
+		@include v.mq(sm){
+			font-size: 4rem;
+		}
   }
   &__face-photo {
-    width: 160px;
+		width: 160px;
     margin-right: auto;
     margin-left: auto;
   }
   &__lead__text {
-    font-size: 4rem;
+		font-size: 4rem;
+		@include v.mq(sm){
+			font-size: 3.2rem;
+		}
   }
 }
 
@@ -70,7 +86,7 @@
     left: 10%;
   }
   &__circle-right {
-    position: absolute;
+		position: absolute;
     width: 150px;
     right: 5%;
     bottom: 5%;

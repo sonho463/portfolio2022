@@ -4,6 +4,7 @@
 *:before,
 *:after {
 box-sizing: border-box;
+// outline: 1px solid pink;
 }
 
 html {
@@ -33,7 +34,7 @@ object {
 }
 
 a {
-	color: v.$color-black;
+	color: v.$main-primary;
 	text-decoration: underline;
 	transition: 0.3s;
 	&:hover {

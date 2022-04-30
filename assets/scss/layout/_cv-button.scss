@@ -7,5 +7,8 @@
 	&__link{
 		display: block;
 		width: 150px;
+		@include v.mq(sm){
+			width: 90px;
+		}
 	}
 }
