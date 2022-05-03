@@ -968,6 +968,11 @@ a:hover img {
   height: 100%;
 }
 
+@media screen and (max-width:480px) {
+  .swiper {
+    height: 100%;
+  }
+}
 .p-works__drop {
   height: auto;
   background-color: #f0f8ff;

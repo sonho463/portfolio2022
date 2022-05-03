@@ -1,37 +1,119 @@
-let d = new Date;
+let d = new Date();
 mo = d.getMonth();
 da = d.getDate();
-console.log(da);
 
-const month = document.querySelector('#js_month');
-const day = document.querySelector('#js_day');
-month.textContent = mo+1;
-day.textContent = da
-
+const month = document.querySelector("#js_month");
+const day = document.querySelector("#js_day");
+month.textContent = mo + 1;
+day.textContent = da;
 
 // footer-cvがでてきたらcv-button非表示
 $(window).scroll(function () {
-  $('.js-footer').each(function () {
+  $(".js-footer").each(function () {
     var hit = $(this).offset().top;
     var scroll = $(window).scrollTop();
     var wHeight = $(window).height();
     var customTop = 100;
-    if (typeof $(this).data('js-footer') !== 'undefined') {
+    if (typeof $(this).data("js-footer") !== "undefined") {
       // data-effect="任意の値" が設定されている場合
-      customTop = $(this).data('js-footer');
+      customTop = $(this).data("js-footer");
     }
     if (hit + customTop < wHeight + scroll) {
-      $('.js-cv-button').addClass("is-hidden");
+      $(".js-cv-button").addClass("is-hidden");
     } else {
-      $('.js-cv-button').removeClass("is-hidden");
-		}
+      $(".js-cv-button").removeClass("is-hidden");
+    }
   });
 });
 
-const ham = $('.js-hamburger-btn');
-const nav = $('.js-g-nav');
-ham.on('click', function () { //ハンバーガーメニューをクリックしたら
-  ham.toggleClass('open'); // ハンバーガーメニューにactiveクラスを付け外し
-  nav.toggleClass('is-active'); // ナビゲーションメニューにactiveクラスを付け外し
-
+const ham = $(".js-hamburger-btn");
+const nav = $(".js-g-nav");
+ham.on("click", function () {
+  //ハンバーガーメニューをクリックしたら
+  ham.toggleClass("open"); // ハンバーガーメニューにactiveクラスを付け外し
+  nav.toggleClass("is-active"); // ナビゲーションメニューにactiveクラスを付け外し
 });
+
+
+// swiper
+
+(() => {
+  let swiper, swiperbool;
+  const breakPoint = 768;
+  const cardOuter = document.querySelector(".js-card-outer");
+  const cardList = document.querySelector(".js-card-list");
+  const cards = document.querySelectorAll(".js-card");
+
+
+  window.addEventListener(
+    "load",
+    () => {
+      if (breakPoint < window.innerWidth) {
+        swiperbool = false;
+        removeSwiperClass();
+      } else {
+        addSwiperClass();
+        createSwiper();
+        swiperbool = true;
+      }
+    },
+    false
+  );
+
+  window.addEventListener(
+    "resize",
+    () => {
+      if (breakPoint < window.innerWidth && swiperbool) {
+        swiper.destroy(false, true);
+        removeSwiperClass();
+        swiperbool = false;
+      } else if (breakPoint >= window.innerWidth && !swiperbool) {
+        addSwiperClass();
+        createSwiper();
+        swiperbool = true;
+      }
+    },
+    false
+  );
+
+  const addSwiperClass = () => {
+    cardOuter.classList.add("swiper");
+    cardList.classList.add("swiper-wrapper");
+    cards.forEach((card) => {
+      card.classList.add("swiper-slide");
+    });
+  };
+
+  const removeSwiperClass = () => {
+    cardOuter.classList.remove("swiper");
+    cardList.classList.remove("swiper-wrapper");
+    cards.forEach((card) => {
+      card.classList.remove("swiper-slide");
+    });
+  };
+
+  const createSwiper = () => {
+    swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      effect: "cube",
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  };
+})();

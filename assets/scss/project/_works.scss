@@ -31,6 +31,16 @@
 	}
 }
 
+
+
+@include v.mq(sm){
+	.swiper{
+		height: 100%;
+	}
+
+}
+
+
 // カードの中のコンポーネントのスタイル
 .p-works {
 	&__drop{

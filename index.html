@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<title>WEBSON・そんほんす</title>
 	<script>
 		(function (d) {
@@ -144,53 +146,63 @@
 					</h2>
 				</div>
 
-				<ul class="p-works__card-list">
-					<li class="p-works__card">
-						<a href="#" class="p-works__card__inner">
-							<div class="p-works__drop">
-								<div class="p-works__drop__inner">
-									<h3 class="p-works__title">ウェブ制作</h3>
+				<div class="js-card-outer swiper">
+					<ul class="p-works__card-list swiper-wrapper js-card-list">
+						<li class="p-works__card swiper-slide js-card">
+							<a href="#" class="p-works__card__inner">
+								<div class="p-works__drop">
+									<div class="p-works__drop__inner">
+										<h3 class="p-works__title">ウェブ制作</h3>
+									</div>
 								</div>
-							</div>
-							<p class="p-works__text">
-								WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
-							</p>
-							<p href="#" class="p-works__nav-to-detail">
-								<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
-							</p>
-						</a>
-					</li>
-					<li class="p-works__card">
-						<a href="#" class="p-works__card__inner">
-							<div class="p-works__drop">
-								<div class="p-works__drop__inner">
-									<h3 class="p-works__title">ウェブ開発</h3>
+								<p class="p-works__text">
+									WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+								</p>
+								<p href="#" class="p-works__nav-to-detail">
+									<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+								</p>
+							</a>
+						</li>
+						<li class="p-works__card swiper-slide js-card">
+							<a href="#" class="p-works__card__inner">
+								<div class="p-works__drop">
+									<div class="p-works__drop__inner">
+										<h3 class="p-works__title">ウェブ開発</h3>
+									</div>
 								</div>
-							</div>
-							<p class="p-works__text">
-								GatsbyJSでサイトを作成。子ども用のプログラミング・タイピングサイトのリンク集、ヘッドレスCMSブログを構築など
-							</p>
-							<p href="#" class="p-works__nav-to-detail">
-								<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
-							</p>
-						</a>
-					</li>
-					<li class="p-works__card">
-						<a href="#" class="p-works__card__inner">
-							<div class="p-works__drop">
-								<div class="p-works__drop__inner">
-									<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+								<p class="p-works__text">
+									GatsbyJSでサイトを作成。子ども用のプログラミング・タイピングサイトのリンク集、ヘッドレスCMSブログを構築など
+								</p>
+								<p href="#" class="p-works__nav-to-detail">
+									<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+								</p>
+							</a>
+						</li>
+						<li class="p-works__card swiper-slide js-card">
+							<a href="#" class="p-works__card__inner">
+								<div class="p-works__drop">
+									<div class="p-works__drop__inner">
+										<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+									</div>
 								</div>
-							</div>
-							<p class="p-works__text">
-								LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
-							</p>
-							<p href="#" class="p-works__nav-to-detail">
-								<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
-							</p>
-						</a>
-					</li>
-				</ul>
+								<p class="p-works__text">
+									LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+								</p>
+								<p href="#" class="p-works__nav-to-detail">
+									<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+								</p>
+							</a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar"></div>
+				</div>
 			</div>
 		</section>
 		<section id="skills" class="p-skills c-section">
@@ -535,10 +547,12 @@
 		<p class="l-footer__copyright">&copy2021 WEBSON そんほんす</p>
 	</footer>
 
+	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- メインのJavaScript -->
 	<script src="./assets/scripts/main.js"></script>
+
 </body>
 
 </html>
