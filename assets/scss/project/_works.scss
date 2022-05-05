@@ -1,87 +1,81 @@
 @use "../foundation/variables" as v;
 
 // カードユニットとカードの枠スタイル
-.p-works{
-	&__card-list {
-		display: flex;
-		align-items: stretch;
-		justify-content: space-between;
-	}
-	&__card {
-		width: 30%;
-		padding: 32px 3%;
-		border: solid 1px v.$color-border-gray;
-		background-color: #fff;
-		box-shadow:
-		6px 6px 6px 0px rgba(0, 0, 0, 0.15),
-		6px 6px 6px 0px rgba(0, 0, 0, 0.15) inset;
-		transition: background-color 1s;
-		&:hover{
-			background-color: v.$main-secondary;
-			transition: background-color .5s;
-		}
-	}
-	&__card__inner{
-		position: relative;
-		text-decoration: none;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		height: 100%;
-	}
+.p-works {
+  &__card-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  &__card {
+    width: 30%;
+    padding: 32px 3%;
+    border: solid 1px v.$color-border-gray;
+    background-color: #fff;
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15),
+      6px 6px 6px 0px rgba(0, 0, 0, 0.15) inset;
+    transition: background-color 1s;
+    &:hover {
+      background-color: v.$main-secondary;
+      transition: background-color 0.5s;
+    }
+  }
+  &__card__inner {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
 }
 
-
-
-@include v.mq(sm){
-	.swiper{
-		height: 100%;
-	}
-
+@include v.mq(sm) {
+  .swiper {
+    height: 100%;
+  }
 }
-
 
 // カードの中のコンポーネントのスタイル
 .p-works {
-	&__drop{
-		height: auto;
-		background-color: v.$main-secondary;
-		border: solid 1px  v.$color-border-gray;
-		border-bottom-left-radius: 50%;
-		border-bottom-right-radius: 50%;
-		box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15)
-
-	}
-	&__drop__inner{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 250px;
-	}
-	&__title{
-		font-family: v.$title-font;
-		font-size: 3.2rem;
-		font-weight: bold;
-		text-align: center;
-	}
-	&__text{
-		margin-top: 40px;
-		font-size: 2.4rem;
-		letter-spacing: .05em;
-		padding-bottom: 80px;
-	}
+  &__drop {
+    height: auto;
+    background-color: v.$main-secondary;
+    border: solid 1px v.$color-border-gray;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+  &__drop__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+  }
+  &__title {
+    font-family: v.$title-font;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__text {
+    margin-top: 40px;
+    font-size: 2.4rem;
+    letter-spacing: 0.05em;
+    padding-bottom: 80px;
+  }
 }
-
-
 
 // 詳しく見るボタン
-.p-works__nav-to-detail{
-	display: inline-block;
-	width: 40%;
-	// align-self: flex-end;
-	position: absolute;
-	bottom: 0;
-	right: 0;
+.p-works__nav-to-detail {
+  display: inline-block;
+  width: 40%;
+  // align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
+
+

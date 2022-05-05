@@ -37,12 +37,19 @@ ham.on("click", function () {
 
 // swiper
 
+const swiperPagination = document.querySelector('.swiper-pagination');
+const swiperButtonPrev = document.querySelector('.swiper-button-prev');
+const swiperButtonNext = document.querySelector('.swiper-button-next');
+const swiperScrollbar = document.querySelector('.swiper-scrollbar');
+
+
 (() => {
   let swiper, swiperbool;
   const breakPoint = 768;
   const cardOuter = document.querySelector(".js-card-outer");
   const cardList = document.querySelector(".js-card-list");
   const cards = document.querySelectorAll(".js-card");
+
 
 
   window.addEventListener(
@@ -76,12 +83,27 @@ ham.on("click", function () {
     false
   );
 
+	const activateSwiperTools=()=>{
+		swiperButtonNext.style.display = "flex";
+		swiperButtonPrev.style.display = "flex";
+		swiperScrollbar.style.display = "flex";
+		swiperPagination.style.display = "flex";
+	}
+
+	const disableSwiperTools =()=>{
+		swiperButtonNext.style.display = "none";
+		swiperButtonPrev.style.display = "none";
+		swiperScrollbar.style.display = "none";
+		swiperPagination.style.display = "none";
+	}
+
   const addSwiperClass = () => {
     cardOuter.classList.add("swiper");
     cardList.classList.add("swiper-wrapper");
     cards.forEach((card) => {
       card.classList.add("swiper-slide");
     });
+		activateSwiperTools();
   };
 
   const removeSwiperClass = () => {
@@ -90,7 +112,11 @@ ham.on("click", function () {
     cards.forEach((card) => {
       card.classList.remove("swiper-slide");
     });
+		disableSwiperTools();
   };
+
+
+
 
   const createSwiper = () => {
     swiper = new Swiper(".swiper", {
