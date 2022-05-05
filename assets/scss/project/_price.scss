@@ -7,6 +7,12 @@
 	grid-gap: 20px 30px;
 	margin-right: auto;
 	margin-left: auto;
+	@include v.mq(sm){
+		display: block;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 .p-price{
@@ -21,11 +27,21 @@
 			grid-row-start:5;
 			grid-row-end:9;
 		}
+		@include v.mq(sm){
+			margin-top: 30px;
+		}
 	}
 	&__desc{
 		background-color: v.$color-white;
 		padding: 30px 5%;
 		font-size: 2.0rem;
+		@include v.mq(sm){
+			font-size: 1.6rem;
+			&--i-charge{
+				padding: 30px 5% 5px;
+				text-align: center;
+			}
+		}
 	}
 	&__price{
 		background-color: v.$color-white;
@@ -38,6 +54,12 @@
 
 .p-price__notice{
 	margin-top: 38px;
+	@include v.mq(sm){
+		margin-top: 8px;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 	&__text{
 		text-align: left;
 	}

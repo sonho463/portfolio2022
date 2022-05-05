@@ -20,8 +20,11 @@ body {
 	font-family: "Helvetica Neue", Arial, "Hiragino Mincho ProN", Meiryo, sans-serif;
 	min-width: 350px;
 	width: 100%;
-	overflow-x: hidden;
 	text-align: justify;
+}
+
+.overflow-hidden{
+	overflow-x: hidden;
 }
 
 img,

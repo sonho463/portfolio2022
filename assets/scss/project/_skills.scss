@@ -7,6 +7,9 @@
     justify-content: center;
     height: auto;
 		padding: 50px 5%;
+		@include v.mq(sm){
+			flex-direction: column;
+		}
 		&:nth-of-type(odd){
 			background-color: v.$main-secondary;
 		}
@@ -15,6 +18,10 @@
     flex: 4;
     height: 150px;
     width: auto;
+		@include v.mq(sm){
+			flex:none;
+			height: 100px;
+		}
     &__image {
       height: 100%;
       width: auto;
@@ -28,6 +35,10 @@
 	&__text-block {
 		flex: 6;
 		margin-left: 30px;
+		@include v.mq(sm){
+			flex: none;
+			margin-top: 30px;
+		}
 	}
 	&__title{
 		font-size: 2.4rem;
@@ -39,5 +50,9 @@
 		font-size: 2.4rem;
 		font-weight: normal;
 		line-height: 1.4;
+		@include v.mq(sm){
+			font-size: 1.8rem;
+			line-height: 1.6;
+		}
 	}
 }

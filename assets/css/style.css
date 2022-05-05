@@ -478,8 +478,11 @@ body {
   font-family: "Helvetica Neue", Arial, "Hiragino Mincho ProN", Meiryo, sans-serif;
   min-width: 350px;
   width: 100%;
-  overflow-x: hidden;
   text-align: justify;
+}
+
+.overflow-hidden {
+  overflow-x: hidden;
 }
 
 img,
@@ -693,6 +696,12 @@ a:hover img {
 }
 .c-section__lead__text {
   font-size: 2.4rem;
+}
+@media screen and (max-width:480px) {
+  .c-section__lead__text {
+    font-size: 1.8rem;
+    text-align: left;
+  }
 }
 
 .p-g-nav {
@@ -1017,6 +1026,11 @@ a:hover img {
   height: auto;
   padding: 50px 5%;
 }
+@media screen and (max-width:480px) {
+  .p-skills__article__item {
+    flex-direction: column;
+  }
+}
 .p-skills__article__item:nth-of-type(odd) {
   background-color: #f0f8ff;
 }
@@ -1024,6 +1038,12 @@ a:hover img {
   flex: 4;
   height: 150px;
   width: auto;
+}
+@media screen and (max-width:480px) {
+  .p-skills__article__icon {
+    flex: none;
+    height: 100px;
+  }
 }
 .p-skills__article__icon__image {
   height: 100%;
@@ -1036,6 +1056,12 @@ a:hover img {
   flex: 6;
   margin-left: 30px;
 }
+@media screen and (max-width:480px) {
+  .p-skills__article__text-block {
+    flex: none;
+    margin-top: 30px;
+  }
+}
 .p-skills__article__title {
   font-size: 2.4rem;
   font-weight: bold;
@@ -1047,6 +1073,12 @@ a:hover img {
   font-weight: normal;
   line-height: 1.4;
 }
+@media screen and (max-width:480px) {
+  .p-skills__article__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+}
 
 .p-price__grid-table {
   display: grid;
@@ -1055,6 +1087,14 @@ a:hover img {
   grid-gap: 20px 30px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (max-width:480px) {
+  .p-price__grid-table {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .p-price__heading {
@@ -1069,10 +1109,24 @@ a:hover img {
   grid-row-start: 5;
   grid-row-end: 9;
 }
+@media screen and (max-width:480px) {
+  .p-price__heading {
+    margin-top: 30px;
+  }
+}
 .p-price__desc {
   background-color: #fff;
   padding: 30px 5%;
   font-size: 2rem;
+}
+@media screen and (max-width:480px) {
+  .p-price__desc {
+    font-size: 1.6rem;
+  }
+  .p-price__desc--i-charge {
+    padding: 30px 5% 5px;
+    text-align: center;
+  }
 }
 .p-price__price {
   background-color: #fff;
@@ -1084,6 +1138,14 @@ a:hover img {
 
 .p-price__notice {
   margin-top: 38px;
+}
+@media screen and (max-width:480px) {
+  .p-price__notice {
+    margin-top: 8px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .p-price__notice__text {
   text-align: left;
