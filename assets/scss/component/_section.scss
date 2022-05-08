@@ -29,7 +29,8 @@
       display: block;
       position: absolute;
       background-image: url(../images/mv/yellow-circle.png);
-      background-size: cover;
+      background-size: contain;
+			background-repeat: no-repeat;
       width: 60px;
       height: 60px;
       transform: translate(-35%, -35%);

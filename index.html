@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<title>WEBSON・そんほんす</title>
 	<script>
@@ -27,12 +30,12 @@
 			<nav class="p-g-nav js-g-nav">
 				<ul class="p-g-nav__inner">
 					<li class="p-g-nav__item">
-						<a href="#about" class="p-g-nav__link">
+						<a href="#about" class="p-g-nav__link p-g-nav__link--about">
 							アバウト
 						</a>
 					</li>
 					<li class="p-g-nav__item">
-						<a href="#works" class="p-g-nav__link">
+						<a href="#works" class="p-g-nav__link p-g-nav__link--works">
 							実績
 						</a>
 					</li>
@@ -42,28 +45,29 @@
 						</a>
 					</li>
 					<li class="p-g-nav__item">
-						<a href="#skills" class="p-g-nav__link">
+						<a href="#skills" class="p-g-nav__link p-g-nav__link--skills">
 							スキル
 						</a>
 					</li>
 					<li class="p-g-nav__item">
-						<a href="#career" class="p-g-nav__link">
+						<a href="#career" class="p-g-nav__link p-g-nav__link--career">
 							経歴
 						</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="p-hamburger-btn js-hamburger-btn">
+			<!-- <div class="p-hamburger-btn js-hamburger-btn">
 				<span class="p-hamburger-btn__line"></span>
 				<span class="p-hamburger-btn__line"></span>
 				<span class="p-hamburger-btn__line"></span>
-			</div>
+			</div> -->
 		</header>
 		<nav class="l-cv-button js-cv-button">
 			<a href="#" class="l-cv-button__link">
 				<img class="l-cv-button__image" src="./assets/images/mv/cv-button.png" alt="お問い合わせ">
 			</a>
 		</nav>
+
 
 		<div class="l-main">
 			<section class="p-mv">
@@ -100,7 +104,6 @@
 					</div>
 				</div>
 			</section>
-
 			<section id="about" class="p-about c-section">
 				<!--ここに黒板背景 -->
 				<div class="c-inner">
@@ -149,57 +152,68 @@
 
 					<div class="js-card-outer swiper">
 						<ul class="p-works__card-list swiper-wrapper js-card-list">
-							<li class="p-works__card swiper-slide js-card">
-								<a href="#" class="p-works__card__inner">
-									<div class="p-works__drop">
-										<div class="p-works__drop__inner">
-											<h3 class="p-works__title">ウェブ制作</h3>
+							<li class="p-works__card-wrapper swiper-slide js-card">
+								<div class="p-works__card">
+									<a href="#" class="p-works__card__inner">
+										<div class="p-works__drop">
+											<div class="p-works__drop__inner">
+												<h3 class="p-works__title">ウェブ制作</h3>
+											</div>
 										</div>
-									</div>
-									<p class="p-works__text">
-										WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
-									</p>
-									<p href="#" class="p-works__nav-to-detail">
-										<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
-									</p>
-								</a>
+										<p class="p-works__text">
+											WordPressオリジナルテーマコーディング案件、ウェブ制作会社LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+										</p>
+										<p href="#" class="p-works__nav-to-detail">
+											<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+										</p>
+									</a>
+								</div>
 							</li>
-							<li class="p-works__card swiper-slide js-card">
-								<a href="#" class="p-works__card__inner">
-									<div class="p-works__drop">
-										<div class="p-works__drop__inner">
-											<h3 class="p-works__title">ウェブ開発</h3>
+							<li class="p-works__card-wrapper swiper-slide js-card">
+								<div class="p-works__card">
+									<a href="#" class="p-works__card__inner">
+										<div class="p-works__drop">
+											<div class="p-works__drop__inner">
+												<h3 class="p-works__title">ウェブ開発</h3>
+											</div>
 										</div>
-									</div>
-									<p class="p-works__text">
-										GatsbyJSでサイトを作成。子ども用のプログラミング・タイピングサイトのリンク集、ヘッドレスCMSブログを構築など
-									</p>
-									<p href="#" class="p-works__nav-to-detail">
-										<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
-									</p>
-								</a>
+										<p class="p-works__text">
+											GatsbyJSでサイトを作成。子ども用のプログラミング・タイピングサイトのリンク集、ヘッドレスCMSブログを構築など
+										</p>
+										<p href="#" class="p-works__nav-to-detail">
+											<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+										</p>
+									</a>
+
+								</div>
 							</li>
-							<li class="p-works__card swiper-slide js-card">
-								<a href="#" class="p-works__card__inner">
-									<div class="p-works__drop">
-										<div class="p-works__drop__inner">
-											<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+							<li class="p-works__card-wrapper swiper-slide js-card">
+								<div class="p-works__card">
+									<a href="#" class="p-works__card__inner">
+										<div class="p-works__drop">
+											<div class="p-works__drop__inner">
+												<h3 class="p-works__title">勉強会ドリブン<br />勉強法</h3>
+											</div>
 										</div>
-									</div>
-									<p class="p-works__text">
-										LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
-									</p>
-									<p href="#" class="p-works__nav-to-detail">
-										<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
-									</p>
-								</a>
+										<p class="p-works__text">
+											LPコーディング案件を納品。自分の所属団体のHPデザイン〜コーディングなど
+										</p>
+										<p href="#" class="p-works__nav-to-detail">
+											<img src="./assets/images/works/view-details.png" class="p-works__nav-to-detail__image" alt="">
+										</p>
+									</a>
+								</div>
 							</li>
 						</ul>
 						<div class="swiper-pagination"></div>
 
 						<!-- If we need navigation buttons -->
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev">
+							<i class="fa-solid fa-play"></i>
+						</div>
+						<div class="swiper-button-next">
+							<i class="fa-solid fa-play"></i>
+						</div>
 
 						<!-- If we need scrollbar -->
 						<div class="swiper-scrollbar"></div>
@@ -215,7 +229,7 @@
 					</div>
 					<ul class="p-skills__article-list">
 						<li class="p-skills__article__item">
-							<figure class="p-skills__article__icon">
+							<figure class="p-skills__article__icon p-skills__article__icon--html">
 								<img class="p-skills__article__icon__image" src="./assets/images/skills/ico_html.png" alt="">
 							</figure>
 							<div class="p-skills__article__text-block">
@@ -517,7 +531,9 @@
 
 		<footer class="l-footer js-footer">
 			<figure class="l-footer__logo">
-				<img src="./assets/images/footer/footer-logo.png" alt="">
+				<a href="#">
+					<img src="./assets/images/footer/footer-logo.png" alt="">
+				</a>
 			</figure>
 			<a href="" class="l-footer__cv">
 				<img src="./assets/images/footer/footer-cv.png" alt="">

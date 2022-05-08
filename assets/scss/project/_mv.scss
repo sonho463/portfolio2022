@@ -29,7 +29,8 @@
     position: absolute;
 		transform:translate(-30%, -70%);
     background-image: url(../images/mv/yellow-circle.png);
-    background-size: cover;
+    background-size: contain;
+		background-repeat: no-repeat;
     width: 210px;
     height: 210px;
   }
@@ -40,7 +41,8 @@
     right: 0;
     bottom: -80%;
     background-image: url(../images/mv/yellow-circle.png);
-    background-size: cover;
+    background-size: contain;
+		background-repeat: no-repeat;
     width: 130px;
     height: 130px;
 		@include v.mq(sm){

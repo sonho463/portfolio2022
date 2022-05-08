@@ -2,53 +2,67 @@
 
 .p-g-nav {
   background-color: v.$main-secondary;
+	margin-left: auto;
+	height: 100%;
   // display: none;
-  @include v.mq(sm) {
-    transform: translateX(100%);
-    transition: all 0.7s;
-  }
+	@include v.mq(md){
+	}
   &.is-active {
-    transform: translateX(0);
+		transform: translateX(0);
   }
   &__inner {
     width: 56%;
+		height: 100%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include v.mq(sm) {
-      background-color: v.$shadow-cBlue;
-      color: v.$main-secondary;
-      flex-direction: column;
-      flex-wrap: wrap;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      padding-bottom: 40px;
-      height: fit-content;
-    }
+		@include v.mq(md){
+			width: 100%;
+		}
   }
   &__item {
     font-size: 2.4rem;
-    @include v.mq(sm) {
-      padding: 30px 5%;
-      width: 100%;
-      text-align: center;
-      border-bottom: #fff solid 1px;
-      border-top: #fff solid 1px;
-    }
+		@include v.mq(md){
+			font-size: 1.4rem;
+		}
   }
   &__item--icon {
     width: 100px;
-    @include v.mq(sm) {
-      width: 60px;
-      order: -2;
-      margin-top: 5px;
-      border: none;
-      padding: 0;
-      margin-bottom: 30px;
-    }
+		@include v.mq(md){
+			width: 60px;
+		}
   }
+	@include v.mq(md){
+		&__link{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+		&__link::before{
+			content:'';
+			display: block;
+			background-size: 80%;
+			background-position: center bottom;
+			width: 65px;height: 65px;
+			background-repeat: no-repeat;
+		}
+		&__link{
+			&--about::before{
+				background-image: url(../images/bottom/about.png);
+			}
+			&--works::before{
+				background-image: url(../images/bottom/works.png);
+			}
+			&--skills::before{
+				background-image: url(../images/bottom/skills.png);
+			}
+			&--career::before{
+			background-image: url(../images/bottom/career.png);
+			}
+
+		}
+	}
 }

@@ -28,29 +28,29 @@ $(window).scroll(function () {
 
 const ham = $(".js-hamburger-btn");
 const nav = $(".js-g-nav");
+const bodyStyle = document.body.style
 ham.on("click", function () {
   //ハンバーガーメニューをクリックしたら
   ham.toggleClass("open"); // ハンバーガーメニューにactiveクラスを付け外し
   nav.toggleClass("is-active"); // ナビゲーションメニューにactiveクラスを付け外し
+	bodyStyle.overflow === "auto" || bodyStyle.overflow === ""
+	? (bodyStyle.overflow = "hidden")
+	: (bodyStyle.overflow = "auto");
 });
-
 
 // swiper
 
-const swiperPagination = document.querySelector('.swiper-pagination');
-const swiperButtonPrev = document.querySelector('.swiper-button-prev');
-const swiperButtonNext = document.querySelector('.swiper-button-next');
-const swiperScrollbar = document.querySelector('.swiper-scrollbar');
-
+const swiperPagination = document.querySelector(".swiper-pagination");
+const swiperButtonPrev = document.querySelector(".swiper-button-prev");
+const swiperButtonNext = document.querySelector(".swiper-button-next");
+const swiperScrollbar = document.querySelector(".swiper-scrollbar");
 
 (() => {
   let swiper, swiperbool;
-  const breakPoint = 768;
+  const breakPoint = 1024;
   const cardOuter = document.querySelector(".js-card-outer");
   const cardList = document.querySelector(".js-card-list");
   const cards = document.querySelectorAll(".js-card");
-
-
 
   window.addEventListener(
     "load",
@@ -83,19 +83,19 @@ const swiperScrollbar = document.querySelector('.swiper-scrollbar');
     false
   );
 
-	const activateSwiperTools=()=>{
-		swiperButtonNext.style.display = "flex";
-		swiperButtonPrev.style.display = "flex";
-		swiperScrollbar.style.display = "flex";
-		swiperPagination.style.display = "flex";
-	}
+  const activateSwiperTools = () => {
+    swiperButtonNext.style.display = "flex";
+    swiperButtonPrev.style.display = "flex";
+    swiperScrollbar.style.display = "flex";
+    swiperPagination.style.display = "flex";
+  };
 
-	const disableSwiperTools =()=>{
-		swiperButtonNext.style.display = "none";
-		swiperButtonPrev.style.display = "none";
-		swiperScrollbar.style.display = "none";
-		swiperPagination.style.display = "none";
-	}
+  const disableSwiperTools = () => {
+    swiperButtonNext.style.display = "none";
+    swiperButtonPrev.style.display = "none";
+    swiperScrollbar.style.display = "none";
+    swiperPagination.style.display = "none";
+  };
 
   const addSwiperClass = () => {
     cardOuter.classList.add("swiper");
@@ -103,7 +103,7 @@ const swiperScrollbar = document.querySelector('.swiper-scrollbar');
     cards.forEach((card) => {
       card.classList.add("swiper-slide");
     });
-		activateSwiperTools();
+    activateSwiperTools();
   };
 
   const removeSwiperClass = () => {
@@ -112,18 +112,15 @@ const swiperScrollbar = document.querySelector('.swiper-scrollbar');
     cards.forEach((card) => {
       card.classList.remove("swiper-slide");
     });
-		disableSwiperTools();
+    disableSwiperTools();
   };
-
-
-
 
   const createSwiper = () => {
     swiper = new Swiper(".swiper", {
       // Optional parameters
       direction: "horizontal",
       loop: true,
-      effect: "cube",
+      // effect: "cube",
 
       // If we need pagination
       pagination: {
@@ -139,6 +136,7 @@ const swiperScrollbar = document.querySelector('.swiper-scrollbar');
       // And if we need scrollbar
       scrollbar: {
         el: ".swiper-scrollbar",
+        draggable: true,
       },
     });
   };

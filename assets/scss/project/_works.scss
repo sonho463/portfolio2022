@@ -6,10 +6,29 @@
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+		column-gap: 3%;
+		@include v.mq(lg){
+			column-gap: 0;
+		}
   }
+	&__card-wrapper{
+		width: 33%;
+
+	}
   &__card {
-    width: 30%;
-    padding: 32px 3%;
+		padding: 32px 5%;
+		height: 100%;
+    // width: 100%;
+    @include v.mq(lg) {
+			width: 100%;
+			max-width: 375px;
+			margin-right: auto;
+			margin-left: auto;
+      padding: 32px 5%;
+    }
+		@include v.mq(sm){
+			padding: 32px 15%;
+		}
     border: solid 1px v.$color-border-gray;
     background-color: #fff;
     box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.15),
@@ -26,12 +45,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
-  }
-}
-
-@include v.mq(sm) {
-  .swiper {
     height: 100%;
   }
 }
@@ -53,6 +66,9 @@
     justify-content: center;
     width: 100%;
     height: 250px;
+    @include v.mq(lg) {
+      height: 150px;
+    }
   }
   &__title {
     font-family: v.$title-font;
@@ -65,6 +81,9 @@
     font-size: 2.4rem;
     letter-spacing: 0.05em;
     padding-bottom: 80px;
+    @include v.mq(lg) {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -79,3 +98,25 @@
 }
 
 
+
+
+.swiper-button-prev {
+  font-size: 3rem;
+	transform: rotate(180deg);
+	i{
+		color: v.$main-primary;
+	}
+  &::after {
+    display: none;
+  }
+}
+.swiper-button-next {
+  font-size: 3rem;
+
+	i{
+		color: v.$main-primary;
+	}
+  &::after {
+    display: none;
+  }
+}

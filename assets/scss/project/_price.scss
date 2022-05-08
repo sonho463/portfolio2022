@@ -61,6 +61,10 @@
 		margin-left: auto;
 	}
 	&__text{
+		font-size: 2.4rem;
 		text-align: left;
+		@include v.mq(sm){
+			font-size: 1.6rem;
+		}
 	}
 }
